@@ -14,7 +14,7 @@ class Problem1 {
 	    answer = answer + num;
 	}
 	// The answer!
-	System.out.println(answer);
+	System.out.println("Problem 1 answer: " + answer);
     }
     
     private void createMultiples(int number) {
