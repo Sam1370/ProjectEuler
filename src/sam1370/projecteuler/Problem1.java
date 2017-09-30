@@ -3,9 +3,10 @@ package sam1370.projecteuler;
 import java.util.HashSet;
 import java.util.Set;
 
-class Problem1 {
+class Problem1 implements Problem {
     Set<Integer> numbers = new HashSet<>();
-    void main() {
+    @Override
+    public void main() {
 	createMultiples(3);
 	createMultiples(5);
 	

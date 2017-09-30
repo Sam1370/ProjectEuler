@@ -1,9 +1,21 @@
 package sam1370.projecteuler;
 
+import java.util.ArrayList;
+import java.util.List;
+
 class Main {
-    static Problem1 p;
+    static List<Problem> problems = new ArrayList<Problem>();
+    
     public static void main(String[] args) {
-	p = new Problem1();
-	p.main();
+	addProblem(new Problem1());
+	addProblem(new Problem2());
+	
+	for (Problem p : problems) {
+	    p.main();
+	}
+    }
+    
+    private static void addProblem(Problem p) {
+	problems.add(p);
     }
 }
